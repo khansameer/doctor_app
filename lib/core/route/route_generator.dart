@@ -4,6 +4,7 @@ import 'package:doctor_app/screen/authentication/forgot/forgot_password_reset_vi
 import 'package:doctor_app/screen/authentication/forgot/forgot_screen.dart';
 import 'package:doctor_app/screen/authentication/login/login_screen.dart';
 import 'package:doctor_app/screen/authentication/login/view/signup_view.dart';
+import 'package:doctor_app/screen/dashboard/appoiment/appoiment_detail.dart';
 import 'package:doctor_app/screen/dashboard/calender/calender_screen.dart';
 import 'package:doctor_app/screen/dashboard/chat_screen/chat_screen.dart';
 import 'package:doctor_app/screen/dashboard/consult/consult_screen.dart';
@@ -113,7 +114,6 @@ class RouteGenerator {
       case RouteName.reportScreen:
         return MaterialPageRoute(
             builder: (_) => const ReportScreen(),
-
             settings: const RouteSettings(name: RouteName.reportScreen));
       case RouteName.editprofileScreen:
         return MaterialPageRoute(
@@ -129,26 +129,28 @@ class RouteGenerator {
       case RouteName.primeScreen:
         return MaterialPageRoute(
             builder: (_) => const PrimeScreen(),
-            settings:
-            const RouteSettings(name: RouteName.primeScreen));
+            settings: const RouteSettings(name: RouteName.primeScreen));
 
       case RouteName.patientStoriesScreen:
         return MaterialPageRoute(
             builder: (_) => const PatientStoriesScreen(),
             settings:
-            const RouteSettings(name: RouteName.patientStoriesScreen));
+                const RouteSettings(name: RouteName.patientStoriesScreen));
 
       case RouteName.reachScreen:
         return MaterialPageRoute(
             builder: (_) => const ReachScreen(),
-            settings:
-            const RouteSettings(name: RouteName.reachScreen));
+            settings: const RouteSettings(name: RouteName.reachScreen));
 
       case RouteName.weeklyEarningScreen:
         return MaterialPageRoute(
             builder: (_) => const WeeklyEarningScreen(),
-            settings:
-            const RouteSettings(name: RouteName.weeklyEarningScreen));
+            settings: const RouteSettings(name: RouteName.weeklyEarningScreen));
+      case RouteName.appoimentDetail:
+        return MaterialPageRoute(
+          builder: (ctx) => const AppoimentDetail(),
+          settings: const RouteSettings(name: RouteName.appoimentDetail),
+        );
       default:
         return MaterialPageRoute(
             builder: (_) =>
