@@ -109,11 +109,13 @@ class ProfileScreen extends StatelessWidget {
                     border: Border.all(color: colorGreen, width: 1),
                     shape: BoxShape.circle),
                 child: ClipOval(
-                  child:
-                      setAssetImage(image: icLoginLogo, width: 40, height: 40,fit: BoxFit.scaleDown),
+                  child: setAssetImage(
+                      image: icLoginLogo,
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.scaleDown),
                 ),
               ),
-
               commonInkWell(
                 child: CommonTextWidget(
                   text: "Edit Profile",
@@ -125,7 +127,6 @@ class ProfileScreen extends StatelessWidget {
                       context: context, routeName: RouteName.editprofileScreen);
                 },
               ),
-   
             ],
           ),
           CommonTextWidget(
@@ -197,7 +198,7 @@ class ProfileScreen extends StatelessWidget {
                   textColor: Colors.amber,
                   fontWeight: FontWeight.w700,
                 ),
-             
+              ),
             ],
           ),
           const SizedBox(
