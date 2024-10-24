@@ -120,7 +120,7 @@ class DashboardProvider extends ChangeNotifier {
   Widget get currentAdminSettingPage => _currentAdminSettingPage;
 
   set setAdminSettingPagePage(String value) {
-    if (value == "Invoice") {
+    if (value == "Procedure Catalog") {
       _currentAdminSettingPage = InvoiceScreen();
     } else if (value == "Clinic Address") {
       _currentAdminSettingPage = const ErrorPage();

@@ -56,7 +56,7 @@ class _PatientNewScreenState extends State<PatientNewScreen> {
       ]
     },*/
     {
-      'title': 'Smart Group',
+      'title': 'Categories',
       'items': [
         'All Female Customer',
         'All Male Customer',

@@ -18,7 +18,7 @@ class AdminSettingScreen extends StatefulWidget {
 
 class _AdminSettingScreenState extends State<AdminSettingScreen> {
   List<Map<String, dynamic>> outerList = [
-    {'title': '', 'items': ['Invoice', 'Clinic Address', 'Notification']},
+    {'title': '', 'items': ['Procedure Catalog', 'Clinic Address', 'Notification','Consent Forms','Billing','EMR','Prescriptions','Calendar','Communications','Contacts','Email PDF Settings','Medical History']},
 
   ];
 

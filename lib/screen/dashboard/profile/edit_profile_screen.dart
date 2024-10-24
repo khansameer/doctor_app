@@ -139,7 +139,7 @@ class EditProfileScreen extends StatelessWidget {
                       onChanged: (String? value) {
                         provider.setGenderValue = value ?? '';
                       },
-                      selectedValue: provider.selectedGender,
+                      selectedValue: provider.selectedGender??'Male',
                     ))
                   ],
                 ),
@@ -153,6 +153,7 @@ class EditProfileScreen extends StatelessWidget {
                       title: "Date of birth",
                       width: size.width,
                       size: size,
+                      // value:'1976-02-29',
                     )),
                     const SizedBox(
                       width: 20,
@@ -338,9 +339,10 @@ class EditProfileScreen extends StatelessWidget {
         radius: 5,
         width: width ?? size.width * 0.1,
         topTextField: 5,
-        title: title ?? "Name*");
+        title: title ?? "Name*",
+        );
   }
-
+ 
   commonDropDown(
       {required Size size,
       String? title,

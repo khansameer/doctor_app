@@ -109,7 +109,7 @@ class _PatientProfilePageState extends State<PatientProfilePage> {
                                   height: 40,
                                   child: CommonTextField(
                                     colorFill: Colors.white,
-                                    hint: "Search Patient Name/ID/Phone number",
+                                    hint: "Search Patient Name / ID /Phone number",
                                   ),
                                 )),
                                 const SizedBox(
@@ -171,13 +171,13 @@ class _PatientProfilePageState extends State<PatientProfilePage> {
                                     WidgetStateProperty.resolveWith<Color>(
                                         (Set<WidgetState> states) {
                                   // Set color for heading row
-                                  return Colors.blueGrey[200]!; // example color
+                                  return const Color.fromRGBO(48, 180, 128, 1)!; // example color
                                 }),
                                 dataRowColor:
                                     WidgetStateProperty.resolveWith<Color>(
                                         (Set<WidgetState> states) {
                                   // Set color for data rows
-                                  return Colors.grey[200]!; // example color
+                                  return const Color.fromARGB(255, 240, 242, 241)!; // example color
                                 }),
                                 // Add other customizations here
                               ),
@@ -192,32 +192,38 @@ class _PatientProfilePageState extends State<PatientProfilePage> {
                                         label: CommonTextWidget(
                                       text: 'Name',
                                       fontWeight: FontWeight.w600,
+                                      textColor: Colors.white,
                                     )),
                                     DataColumn(
                                         label: CommonTextWidget(
                                       text: 'Email',
                                       fontWeight: FontWeight.w600,
+                                      textColor: Colors.white,
                                     )),
                                     DataColumn(
                                         label: CommonTextWidget(
                                       text: 'Phone Number',
                                       fontWeight: FontWeight.w600,
+                                      textColor: Colors.white,
                                     )),
                                     DataColumn(
                                         label: CommonTextWidget(
                                       text: 'Gender',
                                       fontWeight: FontWeight.w600,
+                                      textColor: Colors.white,
                                     )),
                                     DataColumn(
                                         label: CommonTextWidget(
                                       text: 'Age',
                                       fontWeight: FontWeight.w600,
+                                      textColor: Colors.white,
                                     )),
                                     DataColumn(
                                       numeric: true,
                                       label: CommonTextWidget(
                                         text: 'Action',
                                         fontWeight: FontWeight.w600,
+                                        textColor: Colors.white,
                                       ),
                                     ),
                                   ],

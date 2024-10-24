@@ -136,10 +136,11 @@ class _AddAppointmentsWidgetState extends State<AddAppointmentsWidget> {
                           title: "Time"),
                       widget.patientID == null
                           ? CommonTextWidget(
-                              text: "Select Patient",
+                              text: "Patient Name",
                               top: 10,
                             )
                           : const SizedBox.shrink(),
+                      
                       widget.patientID == null
                           ? const SizedBox(
                               height: 10,
@@ -172,6 +173,28 @@ class _AddAppointmentsWidgetState extends State<AddAppointmentsWidget> {
                                           return '${patient.firstName} ${patient.lastName}';
                                         }).toList()
                                       : [])
+                          : const SizedBox.shrink(),
+                          widget.patientID == null
+                          ? commonTextFiledView(
+                        title: "Patient Email Address",
+                        topText: 10,
+                        maxLines: 3,
+                        controller: tetReason,
+                        topTextField: 10,
+                        height: 45,
+                        radius: 8,
+                      )
+                          : const SizedBox.shrink(),
+                      widget.patientID == null
+                          ? commonTextFiledView(
+                        title: "Patient Phone No",
+                        topText: 10,
+                        maxLines: 3,
+                        controller: tetReason,
+                        topTextField: 10,
+                        height: 45,
+                        radius: 8,
+                      )
                           : const SizedBox.shrink(),
                       commonTextFiledView(
                         title: "Description",

@@ -192,7 +192,7 @@ class _GetEditAppointmentsDetailsWidgetState
                           radius: 8,
                           title: "Time"),
                       CommonTextWidget(
-                        text: "Select Patient",
+                        text: "Patient Name",
                         top: 10,
                       ),
                       const SizedBox(
